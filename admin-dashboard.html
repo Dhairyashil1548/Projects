@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <p>Here, you can manage tenders, approve them, and more.</p>
+
+        <!-- Example of a tender list -->
+        <div class="tender-list">
+            <h2>Tender Submissions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>File</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>User One</td>
+                        <td>Example Tender 1</td>
+                        <td><a href="#">Download PDF</a></td>
+                        <td><button onclick="approveTender()">Approve</button></td>
+                    </tr>
+                    <tr>
+                        <td>User Two</td>
+                        <td>Example Tender 2</td>
+                        <td><a href="#">Download PDF</a></td>
+                        <td><button onclick="approveTender()">Approve</button></td>
+                    </tr>
+                    <!-- Add more rows dynamically if needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <button onclick="logout()">Log Out</button>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>
