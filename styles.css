@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 3D Animated Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  gap: 20px;
+  z-index: 1;
+}
+
+/* 3D Glassmorphism Login Card */
+.login-card {
+  width: 45%;
+  min-width: 350px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* 3D Hover Effect */
+.login-card:hover {
+  transform: rotateY(8deg) rotateX(5deg) scale(1.02);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+}
+
+/* Futuristic Heading */
+.login-card h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00f5ff;
+  text-shadow: 0 0 8px #00f5ff;
+}
+
+/* Neon Input Fields */
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Glow Effect */
+input:focus {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+/* Futuristic Neon Button */
+button {
+  width: 90%;
+  padding: 12px;
+  background: linear-gradient(45deg, #00f5ff, #008cff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: linear-gradient(45deg, #008cff, #00f5ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 1);
+}
+
+/* Neon Links */
+p a {
+  color: #00f5ff;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+p a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 12px #00ffcc;
+}
+
+/* Ensure login cards always stay side by side */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .login-card {
+    width: 100%;
+  }
+}
+
+
+

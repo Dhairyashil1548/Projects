@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Here, you can submit new tenders, view upcoming tenders, and check the status of your submissions.</p>
+
+        <!-- Tender submission form -->
+        <div class="tender-form">
+            <h2>Submit New Tender</h2>
+            <form id="tender-form">
+                <label for="tender-name">Tender Name:</label>
+                <input type="text" id="tender-name" name="tender-name" required>
+
+                <label for="tender-description">Tender Description:</label>
+                <textarea id="tender-description" name="tender-description" required></textarea>
+
+                <label for="tender-file">Upload Tender File (PDF or others):</label>
+                <input type="file" id="tender-file" name="tender-file" required>
+
+                <button type="submit">Submit Tender</button>
+            </form>
+        </div>
+
+        <div class="upcoming-tenders">
+            <h2>Upcoming Tenders</h2>
+            <ul>
+                <li>Tender 1: Description, Deadline</li>
+                <li>Tender 2: Description, Deadline</li>
+                <!-- Add more tenders dynamically -->
+            </ul>
+        </div>
+
+        <button onclick="logout()">Log Out</button>
+    </div>
+
+    <script src="user-dashboard.js"></script>
+</body>
+</html>
