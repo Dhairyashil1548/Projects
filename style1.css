@@ -1,0 +1,45 @@
+.bg{
+  text-align: center;
+  height: 100%;
+  background-image: url("bg2.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.button{
+   border-radius: 2px;
+   color: white;
+
+   font-size: 15px;
+   width: 600px;
+  
+   
+}
+
+.img{
+  height: 250px;
+  width: 250px;
+  opacity: 93%;
+  border-radius: 60px;
+}
+
+.box{
+  background-color:  rebeccapurple;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-top: 20px;
+  border-radius: 8%;
+}
+
+.b
+{
+font-size: 30px;
+font-weight: bold;
+color: rgb(12, 209, 240);
+}
